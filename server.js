@@ -22,7 +22,7 @@ var middleware = {
 app.use(middleware.logger);
 // Route Level middleware application
 // About Page route
-app.get('/about', middleware.requireAuthentication,function(req, res){
+app.get('/about!', middleware.requireAuthentication,function(req, res){
    res.send('About Us'); 
 });
 
